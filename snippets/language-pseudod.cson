@@ -1,0 +1,47 @@
+# If you want some example snippets, check out:
+# https://github.com/atom/language-gfm/blob/master/snippets/gfm.cson
+
+'.source.pseudod':
+  'Basic import':
+    'prefix': 'ut'
+    'body': 'utilizar ${1:filename}$0'
+  'Class declaration':
+    'prefix': 'cl'
+    'body': 'clase ${1:class_name} hereda ${2:base_class}\n\t$3\nfinclase$0'
+  'Method declaration':
+    'prefix': 'me'
+    'body': 'metodo ${1:method_name}$0'
+  'Attribute declaration':
+    'prefix': 'at'
+    'body': 'atributo ${1:attribute_name}$0'
+  'Pointer declaration':
+    'prefix': 'pu'
+    'body': 'puntero ${1:pointer_name}$0'
+  'Method definition':
+    'prefix': 'mt'
+    'body': 'funcion ${1:class_name}#${2:method_name} con yo ${3:arguments}\n\t$4\nfinfun$0'
+  'Function definition':
+    'prefix': 'fu'
+    'body': 'funcion ${1:function_name} ${2:arguments}\n\t$3\nfinfun$0'
+  'Documentation string':
+    'prefix': 'doc'
+    'body': '[DOCUMENTA\n@brief $1\n$2\n\n$5\n\n@races ${3:race conditions}\n$4\nDOCUMENTA]$0'
+  'Documentation of arguments (function)':
+    'prefix': 'docaf'
+    'body': '@arg ${1:argument name} ${2:argument description}\n$0'
+  'Documentation of arguments (method)':
+    'prefix': 'docam'
+    'body': '@argyo\n$0'
+  'Documentation of return value':
+    'prefix': 'docrt'
+    'body': '@dev ${1:return value description}\n$0'
+  'Abstract class':
+    'prefix': 'ab'
+    'body': 'clase abstracta ${1:class_name} extiende ${2:base_class}\n\t$3\nfinclase$0'
+  'Comparation':
+    'prefix': 'cmp'
+    'body': 'comparar Importar.${1:Ent or Dec}.Comparar $2 ${3:operator} $4$0'
+  'Function call':
+    'prefix': 'll'
+    'body': 'llamar ${1:function_name} $2 finargs$0'
+

@@ -1,0 +1,102 @@
+'scopeName': 'source.pseudod'
+'name': 'PseudoD'
+'fileTypes': ['pd', 'psd', 'pseudo', 'pseudod']
+
+'patterns': [
+    {
+        'match': '\\b([0-9]+(\\.[0-9]+)?)\\b'
+        'name': 'constant.numeric.pseudod'
+    },
+    {
+        'match': '\\b(adquirir|liberar|instancia|atributo|metodo|abstracta)\\b'
+        'captures':
+            '1':
+                'name': 'keyword.memory.pseudod'
+        'name': 'meta.keyword.memory.pseudod'
+    },
+    {
+        'match': '\\b(puntero)\\b'
+        'captures':
+            '1':
+                'name': 'keyword.memory.pseudod'
+        'name': 'meta.keyword.memory.pseudod'
+    },
+    {
+        'match': '\\b(llamar|\\#\\(Final\\)\\.)\\b'
+        'captures':
+            '1':
+                'name': 'keyword.control.pseudod'
+        'name': 'meta.keyword.control.pseudod'
+    },
+    {
+        'match': '^\\b(utilizar)\\b(.+)\\b$'
+        'captures':
+            '1':
+                'name': 'keyword.control.pseudod'
+            '2':
+                'name': 'entity.name.filepath.pseudod'
+        'name': 'meta.keyword.control.pseudod'
+    },
+    {
+        'match': '\\b(fijar|oper|operador)\\b'
+        'captures':
+            '1':
+                'name': 'keyword.memory.pseudod'
+        'name': 'meta.keyword.memory.pseudod'
+    },
+    {
+        'match': '\\b(a|\\=((¿)?\\?|\\*)|tanto|como|algun|o|e|de|con|comparar|es|no|son|sean|iguales|diferentes|y)\\b'
+        'captures':
+            '1':
+                'name': 'keyword.operator.setter.pseudod'
+        'name': 'keyword.operator.setter.pseudod'
+    },
+    {
+        'match': '\\b(funcion)\\b'
+        'captures':
+            '1':
+                'name': 'keyword.control.pseudod'
+        'name': 'meta.keyword.control.pseudod'
+    },
+    {
+        'match': '\\b(finclase|si|si(_)?no|necesitas|fin(bucle|fun)?|contiene|mientras|nl|crear_pila|comparar_i|sal(ir)?|finargs|Importar\\.[a-zA-Z0-9\\._\\,\\(\\)]+)\\b'
+        'name': 'keyword.pseudod'
+    },
+    {
+        'match': '\\b(clase|estructura|ejecutar|escribir|escribir_esp|incrementar_p|incrementar_puntero|decrementar_p|decrementar_puntero|leer|sistema|empujar|sacar|enviar_parametro|recibir_parametro|recibir_resultado|devolver|usar_pila)\\b'
+        'captures':
+            '1':
+                'name': 'keyword.pseudod'
+        'name': 'meta.keyword.pseudod'
+    },
+    {
+        'match': '\\b(hereda(r)?|extiende|implementa|redireccionar|\\¿son_iguales\\?)\\b'
+        'captures':
+            '1':
+                'name': 'keyword.pseudod'
+        'name': 'meta.keyword.pseudod'
+    },
+    {
+        'begin': '\\['
+        'end': '\\]'
+        'name': 'comment.block.pseudod'
+    },
+    {
+        'begin': '\\{'
+        'end': '\\}'
+        'name': 'string.singlequoted.pseudod'
+    },
+    {
+        'begin': '\\«'
+        'end': '\\»'
+        'name': 'string.doublequoted.pseudod'
+    },
+    {
+        'match': '(\\<[^ \\r\\n\\t\\>]*\\>)'
+        'captures':
+            '1': 'entity.name.resolved.pseudod'
+        'name': 'entity.name.resolved.pseudod'
+    }
+]
+
+
